@@ -1,0 +1,12 @@
+{
+  "name": "madreading-Analytics",
+  "version": "0.0.0",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.7"
+  },
+  "devDependencies": {}
+}

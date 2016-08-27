@@ -14,7 +14,7 @@ app.controller('loginController',
 		analyticsService.getStudentsInfoByEmail($scope.login.email).then(function(email){
 			if($scope.login.email==email){
 			  	//$.cookie('username', $scope.login.username, { expires: 29,path: '/' });      
-			   	window.location.href="#/students-report"; 
+			   	window.location.href="#/students-list"; 
 			}else{
 			  	errorNotify("Invalid credentials");
 			} 

@@ -12,8 +12,14 @@ app.config([
     controller: 'loginController'                 
   });
 
+  $stateProvider.state('studentsList',{
+    url:'/students-list',
+    templateUrl:'angular/views/studentsList.html', 
+    controller: 'studentsListController'                 
+  });
+
   $stateProvider.state('studentsReport',{
-    url:'/students-report',
+    url:'/students-report/:studentId',
     templateUrl:'angular/views/studentsReport.html', 
     controller: 'studentsReportController'                 
   });   

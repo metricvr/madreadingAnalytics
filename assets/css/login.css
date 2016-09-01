@@ -1,8 +1,28 @@
 .login-wrapper{
-    height:350px;
+    height:400px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     background-color: white;
     padding:40px 20px 40px 20px;
+}
+
+.login-bg{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%; 
+    background-image: url('../images/bg3.png');
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-attachment: scroll;
+    background-color: #253340;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover; 
+    z-index: 1;    
 }
 
 .main-login-input{

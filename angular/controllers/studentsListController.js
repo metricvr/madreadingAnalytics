@@ -4,4 +4,9 @@ app.controller('studentsListController',
 	 		
 	$scope.init=function(){
 	};
+
+	$scope.logout=function(){
+		window.location.href="#/"; 
+	};
+
 }]);

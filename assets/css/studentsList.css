@@ -1,0 +1,8 @@
+.studentslist-wrapper{
+    width: 65%;
+    min-width: 450px;
+    height:auto;
+    min-height:78vh;
+    background-color: white;
+    padding: 30px;
+}

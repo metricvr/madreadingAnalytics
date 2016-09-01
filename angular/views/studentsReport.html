@@ -1,13 +1,31 @@
 
-<section style="height:100vh;" ng-init="init()" class="flex-column-center">
-  WELCOME TO STUDENTS REPORT PAGE
-
-
-  <div style="margin-top:40px;">
-  		<div style="margin-top:4px;">
-  			<h1>Students REPORT </h1>
-  		</div>
-  		
-
+<section style="height:100vh;background-color:#E9EBEE;" ng-init="init()">
+  <div style="width:100%;background-color:#221c2e;height:50px;" class="vertical-center">    
+    <div style="width:100%; padding:0 35px 0 35px;">
+      <div class="pull-right">
+        <span style="color:white;">
+          TeacherName
+        </span>
+        <span ng-click="logout()" style="cursor:pointer;margin-left:10px;font-style: italic;color:white;">
+          Logout
+        </span>
+      </div>
+    </div>
   </div>
+
+  <div style="width:100%;height:50px;margin-top:20px;" class="flex-column-center">  
+    <div>
+      <span style="color:black;font-size:30px;font-weight:700;">
+        Students Report
+      </span>       
+    </div>    
+  </div>
+
+
+  <div style="width:100%;margin-top:20px;" class="flex-column-center">  
+    <div class="studentslist-wrapper">
+             
+    </div>    
+  </div>
+
 </section>

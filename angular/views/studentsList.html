@@ -1,21 +1,44 @@
 
-<section style="height:100vh;" ng-init="init()" class="flex-column-center">
-  WELCOME TO STUDENTS LIST PAGE
-
-
-  <div style="margin-top:40px;">
-  		<div style="margin-top:4px;">
-  			<a href="/#/students-report/student1">student1</a>
-  		</div>
-  		<div style="margin-top:4px;">
-  			<a href="/#/students-report/student2">student2</a>
-  		</div>
-  		<div style="margin-top:4px;">
-  			<a href="/#/students-report/student3">student3</a>
-  		</div>
-  		<div style="margin-top:4px;">
-  			<a href="/#/students-report/student4">student4</a>
-  		</div>
-
+<section style="height:100vh;background-color:#E9EBEE;" ng-init="init()">
+  <div style="width:100%;background-color:#221c2e;height:50px;" class="vertical-center">    
+    <div style="width:100%; padding:0 35px 0 35px;">
+      <div class="pull-right">
+        <span style="color:white;">
+          TeacherName
+        </span>
+        <span ng-click="logout()" style="cursor:pointer;margin-left:10px;font-style: italic;color:white;">
+          Logout
+        </span>
+      </div>
+    </div>
   </div>
+
+  <div style="width:100%;height:50px;margin-top:20px;" class="flex-column-center">  
+    <div>
+      <span style="color:black;font-size:30px;font-weight:700;">
+        Students List
+      </span>       
+    </div>    
+  </div>
+
+
+  <div style="width:100%;margin-top:20px;" class="flex-column-center">  
+    <div class="studentslist-wrapper horizontal-center">
+       <div>
+          <div>
+            <a href="/#/students-report/233">Student1</a>
+          </div>
+          <div>
+            <a href="">Student1</a>
+          </div>
+          <div>
+            <a href="">Student1</a>
+          </div>
+          <div>
+            <a href="">Student1</a>
+          </div>
+       </div>      
+    </div>    
+  </div>
+
 </section>

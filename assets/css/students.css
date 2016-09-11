@@ -1,4 +1,12 @@
 .studentslist-wrapper{
+    width: 30%;
+    min-width: 330px;
+    height:auto;   
+    background-color: white;
+    padding: 30px;
+}
+
+.studentsReport-wrapper{
     width: 65%;
     min-width: 450px;
     height:auto;

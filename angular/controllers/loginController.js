@@ -1,19 +1,16 @@
 app.controller('loginController',
-	['$scope','$rootScope','$q','$location','analyticsService',
-	function($scope,$rootScope,$q,$location,analyticsService){
-
-	$scope.login={
-		email:null
-	};	
-		 		
+	['$scope','$rootScope','$q','$location','analyticsService','facebookHelper',
+	function($scope,$rootScope,$q,$location,analyticsService,facebookHelper){
+	 		
 	$scope.init=function(){
 	};
 
 	$scope.loginTeacher=function(){
 
-		analyticsService.getStudentsInfoByEmail($scope.login.email).then(function(email){
-			if($scope.login.email==email){
-			  	//$.cookie('username', $scope.login.username, { expires: 29,path: '/' });      
+		facebookHelper.LoginFacebook().then(function(facebookTeacher){
+			if(facebookTeacher.id){
+			  	$.cookie('username', facebookTeacher.name, { expires: 29,path: '/' }); 
+			  	$.cookie('userid', facebookTeacher.id, { expires: 29,path: '/' });      
 			   	window.location.href="#/students-list"; 
 			}else{
 			  	errorNotify("Invalid credentials");
